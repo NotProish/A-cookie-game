@@ -1,0 +1,53 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>06324dd0-2aba-43b3-994f-97b321ea5d3b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>A_cookie_game.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>A cookie game</Name>
+    <RootNamespace>A cookie game</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\Downloads\A cookie game.py">
+      <Link>A cookie game.py</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Background.png" />
+    <Content Include="Candycookie.png" />
+    <Content Include="frosted.png" />
+    <Content Include="mooncookie.png" />
+    <Content Include="realcandycookie.png" />
+    <Content Include="cookie.png" />
+    <Content Include="Donutcookie.png" />
+    <Content Include="Bird.png" />
+    <Content Include="Eat.mp3" />
+    <Content Include="Gamesound.mp3" />
+    <Content Include="gingerbreadcookie.png" />
+    <Content Include="macadamiacookie.png" />
+    <Content Include="Onechipcookie.png" />
+    <Content Include="Pixelcookie.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
